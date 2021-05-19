@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/feedFragment">
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="fr.iim.myapplication.presentation.views.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_feedFragment_to_paramFragment"
+            app:destination="@id/paramFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paramFragment"
+        android:name="fr.iim.myapplication.presentation.views.ParamFragment"
+        android:label="fragment_param"
+        tools:layout="@layout/fragment_param" />
+</navigation>
